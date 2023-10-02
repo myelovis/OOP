@@ -1,3 +1,8 @@
+/*
+Teacher: Sara Kfouri
+Student: Lovisa Nguyen 2104554
+*/
+
 #include <iostream>
 #include <string>
 
@@ -76,13 +81,6 @@ int main() {
     for (int i = 0; i < uass; ++i) {
         std::cout << ana[i] << " ";
     }
-
-
-
-
-
-
-
     return 0;
 }
 
