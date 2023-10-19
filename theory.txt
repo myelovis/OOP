@@ -1,0 +1,48 @@
+Prepare for the C++ Theory test
+
+***Pointer
+
+https://www.youtube.com/watch?v=41kOpqSiDRE
+Pointers in C++ (and most languages that support them) are passed by value:
+Pointers Themselves: When you pass a pointer to a function, you're passing the address it holds by value. This means that the function gets a copy of the address, 
+not the original pointer. 
+If you modify the pointer inside the function (i.e., make it point somewhere else), the original pointer outside the function remains unchanged.
+Data Pointed to by the Pointer: Since the function has a copy of the address that the pointer points to, it can directly access and modify the data at that address. 
+Thus, when you dereference the pointer inside the function and modify the data, you're modifying the original data, not a copy of it.
+
+Data is constant but the pointer is not. 
+Pointer is constant but the data is not. (After that you can pointer for another varibale)
+Data and pointer are constants.
+
+WHEN THE POINTERS ARE USE
+.Dynamic Memory Allocation:
+Scenario: Consider an application like Microsoft Word or Google Docs. The text you enter into a document isn't of a fixed size; it grows and shrinks as you type or delete.
+To manage this, such applications might allocate memory dynamically based on the text size, which is done using pointers in conjunction with memory management functions 
+like new or malloc. Data Structures:
+Scenario: Applications like web browsers keep track of which pages you've visited using a data structure called a stack. 
+When you click the "back" button, the browser pops the URL off the stack. This kind of dynamic data structure is often implemented using pointers. 
+Another structure is a linked list, used in scenarios where items need to be inserted or deleted frequently, like in certain types of database or list implementations.
+
+.Function Callbacks:
+Scenario: Imagine you're writing software for a robot. Different sensors on the robot trigger different actions. 
+Instead of hard-coding a reaction for each sensor, you might use a function pointer. When a sensor is triggered, the appropriate function is "called back" using this pointer.
+Arrays and Strings:
+Scenario: Pointers can be used to iterate over arrays or strings more efficiently in certain cases, such as in embedded systems where performance is critical. Dynamic Libraries:
+Scenario: Modern operating systems and applications use dynamic libraries (like .dll or .so files). When a program uses one of these libraries, it doesn't know the memory address of the functions it's calling ahead of time. 
+Instead, it uses pointers to reference these functions once they're loaded into memory.
+
+.Direct Memory Access:
+Scenario: In embedded systems, hardware components are often accessed directly through specific memory addresses. Pointers are used to read from and write to these addresses.
+Performance Optimization:
+Scenario: In video games or graphics software, speed is crucial. Sometimes, to speed things up, developers will use pointers to access data directly,
+avoiding the overhead of class methods or other abstractions. Custom Memory Management:
+Scenario: In high-performance applications like databases or web servers, custom memory allocation schemes (like memory pools) can be
+used to optimize memory usage patterns specific to those applications. Such custom schemes rely heavily on pointers. Interfacing with Other Languages:
+Scenario: When writing software that interfaces with code written in another language (like C++ code calling a C library), 
+pointers are often used to bridge the gap between the two languages. Buffer Handling in I/O Operations:
+Scenario: Reading or writing files often involves using buffers, which are just blocks of memory. Pointers are used to manage and navigate these blocks of memory. 
+In essence, anytime you need direct, fine-grained control over memory, or when performance is a significant concern, pointers become incredibly useful. 
+However, with great power comes great responsibility. Incorrect use of pointers can lead to bugs, crashes, or security vulnerabilities, so it's essential to use them judiciously.
+
+
+***Over-loading function
