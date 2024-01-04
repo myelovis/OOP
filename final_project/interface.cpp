@@ -3,6 +3,7 @@
 
 
 int main() {
-    userInterface();
-    return 0;
-}
+userInterface theUserInterface;
+theUserInterface.interact();
+return 0;
+} 

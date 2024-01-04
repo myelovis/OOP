@@ -16,9 +16,6 @@ g++ -c lordApp.cpp -o lordApp.o
 # Link the object files into the executable
 g++ landlord.o lordApp.o -o lordApp
 
-# Run the executable
+# Run the executable (only the below command, not need to use the cpprun.sh T.T)
 ./lordApp
-
-
-
 */

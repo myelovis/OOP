@@ -18,7 +18,7 @@ tenant::~tenant() { /* empty */ }
 int tenant::getAptNumber() { return aptNumber; }
 bool operator < (const tenant& t1, const tenant& t2) { return t1.name < t2.name; }
 bool operator == (const tenant& t1, const tenant& t2) { return t1.name == t2.name; }
-ostream& operator << (ostream& s, const tenant& t) { s << t.aptNumber << '\t' << t.name << endl; }
+ostream& operator << (ostream& s, const tenant& t) { return s << t.aptNumber << '\t' << t.name << endl;}
 
 void tenantInputScreen::getTenant() {
     cout << "Enter tenant’s name (George Smith): ";
