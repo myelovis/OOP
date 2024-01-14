@@ -1,14 +1,16 @@
+// StudentList.h
 #ifndef STUDENTLIST_H
 #define STUDENTLIST_H
 
 #include "Student.h"
+#include <memory>
 #include <vector>
-
 
 class StudentList {
 public:
     void addStudent(const Student& student);
-    const std::vector<Student>& getStudents() const;
+    void displayMenu() const;
+    void displayStudentStatus(int studentID) const;
     void displayPassingStudents() const;
     bool saveToFile(const std::string& filename) const;
     bool loadFromFile(const std::string& filename);
@@ -17,4 +19,4 @@ private:
     std::vector<Student> students;
 };
 
-#endif 
+#endif // STUDENTLIST_H

@@ -1,4 +1,3 @@
-// StudentList.cpp
 #include "StudentList.h"
 #include <iostream>
 #include <fstream>
@@ -37,7 +36,7 @@ bool StudentList::saveToFile(const std::string& filename) const {
 }
 
 bool StudentList::loadFromFile(const std::string& filename) {
-    students.clear(); // Clear existing students
+    students.clear(); 
 
     std::ifstream inputFile(filename);
     if (!inputFile.is_open()) {
